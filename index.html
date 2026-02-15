@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hieeeee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <header>
+        <p>I don’t know if this is the right time to tell you.
+        I don’t even know if this is the reason we met.
+        But I know one thing for sure.
+        I’m not going to walk away from you.
+        Not easily. Not suddenly.
+        Because somewhere between friendship and silence,
+        I fell in love with you.
+
+        Will you be my girl ?! 👉🏽👈🏽</p>
+    </header>
+<div class="choice-area">
+
+    <img id="clipart" src="capy1.png" class="clipart">
+
+    <div class="choice-buttons">
+        <button id="yesBtn" class="YES">YESSSSSSSSSSSSSSS</button>
+        <button id="noBtn" class="NO">No</button>
+    </div>
+
+</div>
+
+<script>
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+    const img = document.getElementById("clipart");
+
+    let size = 16;
+    let padding = 12;
+
+    noBtn.addEventListener("click", () => {
+        img.src = "capy2.png";
+
+        size += 4;
+        padding += 4;
+
+        yesBtn.style.fontSize = size + "px";
+        yesBtn.style.padding = padding + "px " + (padding * 2) + "px";
+    });
+
+    yesBtn.addEventListener("click", () => {
+        window.location.href = "yes.html";
+    });
+</script>
+
+</body>
+</html>
